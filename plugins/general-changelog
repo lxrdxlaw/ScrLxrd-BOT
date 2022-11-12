@@ -1,0 +1,8 @@
+let handler = async (m, { conn, usedPrefix, groupMetadata, command }) => {
+   m.reply('*[ CHANGELOG ]*\n\nEmpty Update :/')
+}
+handler.help = ['changelog']
+handler.tags = ['general']
+handler.command = /^(changelog|chg)$/i
+
+export default handler
